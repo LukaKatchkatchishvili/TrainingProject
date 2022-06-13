@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="14" viewBox="0 0 16 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="14" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="photos" opacity="0.5" clip-path="url(#clip-path)">
+    <path id="photos-2" data-name="photos" d="M0,0V14H16V0ZM14,12H11L6.5,7.5,2,12V2H14Z" fill="#343638" fill-rule="evenodd"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="12" viewBox="0 0 16 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="12" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="mail" opacity="0.5" clip-path="url(#clip-path)">
+    <path id="mail-2" data-name="mail" d="M0,0V12H16V0ZM8,8,2,2H14Z" fill="#343638" fill-rule="evenodd"/>
+  </g>
+</svg>
