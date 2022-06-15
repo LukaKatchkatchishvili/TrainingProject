@@ -298,6 +298,7 @@ body {
   opacity: 25%;
   margin-left: 0;
   padding-left: 40px;
+  padding-top: 20px;
 }
 
 .header .mini-menu.active {
