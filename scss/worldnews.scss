@@ -1,0 +1,205 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+*{
+    font-family: helvetica;
+}
+.worldNews{
+    padding-bottom: 40px;
+    background: $bgGrey;
+    &__wrapper{
+        display: flex;
+    }
+
+    padding-top:50px;
+    &__title{
+        display: flex;
+        align-items: center;
+
+        margin: 40px 0;
+        text-transform: uppercase;
+        .arrow-back{
+            display: none;
+        }
+        .filter{
+            display: none;
+        }
+        span:nth-child(2){
+            margin-left: 30px;
+            margin-right: 20px;
+            font-weight: bold;
+            
+        }
+        span:nth-child(3){
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        span:nth-child(4){
+            color:$grey;
+        }
+    }
+    &__left{
+        position: relative;
+        width: 580px;
+        &--img{
+            width: 580px;
+            img{
+               max-width: 100%;
+            }
+         }
+        &--text{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+            h1{
+                font-size:24px;
+                font-weight: bold;
+                color:white;
+                text-transform: uppercase;
+            }
+            div{
+                width: 40px;
+                height: 2px;
+                background: $red;
+                margin: 20px auto;
+            }
+            h3{
+                color:white;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__right{
+        width: 100%;
+        padding: 127px 110px;
+        background: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 500px;
+        .form{
+            &__date{
+                display: flex;
+                flex-direction: column;
+            }
+            &__keyword{
+                display: flex;
+                flex-direction: column;
+                margin: 40px 0;
+            }
+            .forms{
+                label{
+                    font-size:13px;
+                    margin-bottom: 10px;
+                }
+                input{
+                    width: 100%;
+                    padding: 12px 20px;
+                    border-radius: 5px;
+                    border:2px solid $lineGrey;
+                }
+                input:focus{
+                    background: lighten($color: $bgGrey, $amount: 10%)
+                }
+            }
+            button{
+                padding: 15px 42px;
+                text-transform: uppercase;
+                background: $red;
+                border: $grey;
+                border-radius: 5px;
+                color:white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.article{
+    background: $bgGrey;
+    &__inner{
+        display: flex;
+        padding: 40px 0;
+
+        border:1px solid $lineGrey;
+        border-left:none;
+        border-right: none;
+    }
+    &__title{
+        width: 360px;
+        h1{
+            font-size:24px;
+            margin-top: 20px;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        article{
+            width: 360px;
+        }
+    }
+    &__left{
+        margin: 0 40px;
+    }
+    &__right{
+        .time{
+            margin-top: 20px;
+        }
+    }
+
+}
+.big-article{
+    padding-top: 40px;
+    padding-bottom: 160px;
+    background: $bgGrey;
+
+    &__article{
+        padding:40px 0;
+        border-bottom:2px solid $lineGrey;
+        article{
+            width: 760px;
+            font-size:14px;
+            line-height: 1.5;
+            color:$grey;
+        }
+        article:nth-child(2){
+            padding:40px 0;
+        }
+        article:nth-child(3){
+            display: none;
+        }
+
+    }
+    &__pages{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "mediaworldnews";

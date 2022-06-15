@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Arrow_Back" data-name="Arrow Back" clip-path="url(#clip-path)">
+    <path id="Arrow_Back-2" data-name="Arrow Back" d="M16,7H3.8L9.4,1.4,8,0,0,8l8,8,1.4-1.4L3.8,9H16Z" fill="#343638"/>
+  </g>
+</svg>

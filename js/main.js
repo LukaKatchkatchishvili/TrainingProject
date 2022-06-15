@@ -1,13 +1,14 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".header__nav__wrapper");
-const header = document.querySelector(".header");
-const footer = document.querySelector(".footer");
-const news = document.querySelector(".news");
+const hamburger = document.querySelector(".header__burger");
+const closeburger = document.querySelector(".close");
+
+const navMenu = document.querySelector(".mini-menu");
 
 hamburger.addEventListener("click",() =>{
-    header.classList.toggle("active");
-    footer.classList.toggle("active");
+    navMenu.classList.add("active");
 })
-document.querySelectorAll(".header__nav__wrapper--link").forEach(n=> n.addEventListener("click",()=>{
-    hamburger.classList.remove("active");
+closeburger.addEventListener("click",() =>{
+    navMenu.classList.remove("active");
+})
+document.querySelectorAll(".burgerclick").forEach(n=> n.addEventListener("click",()=>{
+    navMenu.classList.remove("active");
 }))

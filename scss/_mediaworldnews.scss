@@ -1,0 +1,188 @@
+@media (max-width:1175px) {
+    .worldNews{
+        &__inner{
+            margin: 0 80px;
+        }
+        &__title{
+            position: relative;
+            .filter{
+                display: block;
+                position: absolute;
+                right: 0;
+                padding: 12px;
+                padding-bottom: 9px;
+                border-radius: 10px;
+                border:1.5px solid $grey;
+                background-color: lighten($color: $grey, $amount: 28%);
+            }
+        }
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__left{
+            width: 100%;
+            &--img{
+                width: 100%;
+                img:nth-child(1){
+                    width: 100%;
+                    border-top-left-radius:5px ;
+                    border-top-right-radius: 5px;
+                }
+                h1{
+                    font-size:32px;
+                }
+            }
+        }
+        &__right{
+            height: auto;
+            padding: 87px 81px;
+        }
+        
+    }
+    .article{
+        &__inner{
+            margin: 0 80px;
+            flex-direction: column;
+        }
+        &__wrapper{
+            margin-top: 40px;
+            justify-content: space-between;
+            article{
+                font-size:14px;
+                width: 100%;
+            }
+        }
+        &__left{
+            width: 50%;
+            margin-left: 0;
+        }
+        &__right{
+            width: 50%;
+        }
+    }
+    .big-article{
+        padding-bottom: 80px;
+        &__inner{
+            padding: 0 80px;
+        }
+        &--img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &__article{
+            article{
+                width: 100%;
+            }
+        }
+        &__pages{
+            display: block;
+            margin-top: 36px;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin-right: 24px;
+                    text-align: center;
+                    font-size:11px;
+                    color:$grey;
+                }
+                .onsite{
+                    position: relative;
+                    color:black;
+                }
+                .onsite::before{
+                    content: ' ';
+                    position: absolute;
+                    bottom: -11px;
+                    left:-2px;
+                    width: 15px;
+                    height: 2px;
+                    background-color: $red;
+                }
+            }
+        }
+    }
+    .footer{
+        display: block;
+    }
+    
+}
+@media (max-width:768px){
+    .header{
+        display: none;
+        
+    }
+    .worldNews{
+        padding-top: 1px;
+        &__inner{
+            margin: 0;
+        }
+        &__title{
+            margin: 17px 16px;
+            &__wrapper{
+                display: none;
+            }
+            .arrow-back{
+                display: block;
+            }
+            .filter{
+                border: 0;
+                background: transparent;
+            }
+        }
+        &__left{
+            &--text{
+                h3{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &__right{
+            padding: 36px 24px;
+        }
+    }
+    .article{
+        &__inner{
+            padding: 40px 24px;
+            margin: 0;
+        }
+        &__title{
+            width: 100%;
+        }
+        &__wrapper{
+            flex-direction: column;
+            color:$grey;
+        }
+        &__left{
+            width: 100%;
+            margin-bottom: 35px;
+        }
+        &__right{
+            width: 100%;
+        }
+    }
+    .big-article{
+        &__inner{
+            padding: 0 24px;
+        }
+        &__article{
+            article:nth-child(3){
+                display: block;
+                color: $titleBlack;
+                font-size:16px;
+            }
+        }
+    }
+    .footer{
+        display: none;
+    }
+    
+}
+
+@media (max-width:620px){
+    
+}

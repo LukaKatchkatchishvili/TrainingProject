@@ -34,12 +34,197 @@ body {
     color: $titleBlack;
 }
 
+// header
+.header{
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+    position: fixed;
+    z-index: 1;
+    background: $bgGrey;
+    &__inner{
+       display: flex;
+       background: $bgGrey;
+       justify-content: space-between;
+       align-items: center;
+ 
+       padding: 0 20px;
+    }
+    &__burger{
+       display: none;
+       cursor: pointer;
+    }
+    &__logo{
+       h1{
+          font-size: 13px;
+          font-family: helvetica;
+          color:$red;
+       }
+    }
+ 
+    &__nav{
+       display: flex;
+       align-items: center;
+       &__wrapper{
+          display: flex;
+ 
+          margin-right: 43px;
+          
+          &--link{
+             padding: 19px 10px;
+ 
+             font-size:11px;
+             font-family: Helvetica;
+             text-transform: uppercase;
+             font-weight: bold;
+             color:$black;
+             opacity: 50%;
+          }
+          .active{
+             opacity: 100%; 
+          }
+       }
+    }
+    .mini-menu{
+       position: fixed;
+       width: 287px;
+       height: 100vh;
+       top:0;
+       left:-300px;
+ 
+       background-color: $bgGrey;
+       transition: all ease 0.3s;
+       .burgerAndLogo{
+          display: flex;
+          padding-left:40px;
+          padding-top: 38px;
+          .header__logo{
+             margin-left: 40px;
+          }
+       }
+       .header__nav__wrapper{
+          height: 55vh;
+          padding-top: 90px;
+          padding-bottom: 150px;
+          padding-left:40px;
+          flex-direction: column;
+          justify-content: center;
+          a{
+             display: flex;
+          }
+       }
+       .footer__ul__wrapper{
+          height: 30vh;
+          background: black;
+          margin-left: 0;
+          margin-left: 0;
+          padding-left:40px;
+          padding-top: 58px;
+          opacity: 25%;
+          .ul{
+             li{
+                font-size:11px;
+                margin-bottom: 30px;
+             }
+          }
+          &__second{
+             margin: 0;
+             margin-right: 50px;
+          }
+       }
+       .footer__socials{
+          justify-content: flex-start;
+          height: 10vh;
+          background-color: black;
+          opacity: 25%;
+          margin-left: 0;
+          padding-left: 40px;
+       }
+    }
+    .mini-menu.active{
+       left:0;
+       filter: drop-shadow(0px 0px 60px $grey);
+    }
+ }
+
+
+
+// footer
+.footer{
+    background: $grey;
+    &__inner{
+       display: flex;
+       justify-content: space-between;
+ 
+       padding-top: 54px;
+       padding-bottom: 60px;
+    }
+    &__logoAndUl{
+       display: flex;
+    }
+    &__logo{
+       color:white;
+       font-size:13px;
+       font-family: helvetica;
+       font-weight: bold;
+       text-transform: uppercase;
+    }
+    &__ul__wrapper{
+       display: flex;
+ 
+       margin-left: 61px;
+       .ul{
+          li{
+             margin-bottom: 8px;
+ 
+             color:$footerColor;
+          }
+          
+       }
+       &__second{
+          margin: 0 40px;
+       }
+    }
+    &__input{
+       position: relative;
+       input{
+          width: 262px;
+          padding: 15px 20px;
+ 
+          background: $grey;
+          border:white 2px solid;
+          border-radius: 5px;
+          border-color:darken(white,25%);
+          &::placeholder{
+             opacity: 50%;
+          }
+       }
+       img{
+          position: absolute;
+          top:17px;
+          right: 12px;
+ 
+          cursor: pointer;
+       }
+       p{
+          font-size:11px;
+          color: $footerColor;
+          margin-top: 16px;
+       }
+    }
+    &__socials{
+       img{
+          margin-right: 32px;
+       }
+    }
+ }
 
 // mini things
 .arrow-wrapper{
     position: absolute;
     top:0;
-    right:-15px;
+    right:-20px;
 
     cursor: pointer;
     img{
@@ -58,3 +243,40 @@ body {
 }
 
 
+@media (max-width:1440px) {
+    .footer{
+        &__inner{
+            margin:0 80px;
+            flex-direction: column;
+        }
+        &__logoAndUl{
+            justify-content: space-between;
+        }
+        &__input{
+            width: 262px;
+        }
+        &__socials{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+@media (max-width:768px) {
+    .header{
+       padding: 10px 0;
+        &__burger{
+            display: block;
+        }
+        &__nav__wrapper{
+            display: none;
+        }
+    }
+    .footer{
+        display: none;
+    }
+    .mini-menu{
+        .header__nav__wrapper{
+            display: flex;
+        }
+    }
+}
