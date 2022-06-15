@@ -1,0 +1,42 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.latest-news{
+    padding-top: 54px;
+    background: $bgGrey;
+    &__inner{
+        @media (max-width:1200px){
+            padding:0 24px;
+        }
+    }
+    &__title{
+        padding-bottom: 15px;
+    }
+    &__card{
+        padding: 15px 0;
+        border-top: 1px solid $grey;
+        p{
+            padding: 15px 0;
+        }
+    }
+    .btn-div{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        button{
+        padding: 15px 30px;
+
+        font-size: 11px;
+        background: $red;
+        border:0;
+        border-radius: 5px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+     }
+    }
+    
+}
