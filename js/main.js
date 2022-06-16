@@ -6,17 +6,9 @@ const navMenu = document.querySelector(".mini-menu");
 
 hamburger.addEventListener("click",() =>{
     navMenu.classList.add("active");
-    window.onscroll = ()=>{
-        let x=window.scrollX;
-        let y=window.scrollY;
-        window.onscroll=function(){window.scrollTo(x, y);};
-    };
 })
 closeburger.addEventListener("click",() =>{
     navMenu.classList.remove("active");
-    window.onscroll = ()=>{
-        window.onscroll=function(){}
-    };
 })
 document.querySelectorAll(".burgerclick").forEach(n=> n.addEventListener("click",()=>{
     navMenu.classList.remove("active");
