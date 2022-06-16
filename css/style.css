@@ -1,6 +1,4 @@
 /* Slider */
-@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
-@import url("db.onlinewebfonts.com/c/796e2db2256ddfab47394211f41ac410?family=Acumin+Pro");
 .slick-slider {
   position: relative;
   display: block;
@@ -105,20 +103,26 @@
 }
 
 @font-face {
-  font-family: 'BPG Arial';
-  src: url("../fonts/BPGArial.eot");
-  src: url("../fonts/BPGArial.eot?#iefix") format("embedded-opentype"), url("../fonts/BPGArial.woff2") format("woff2"), url("../fonts/BPGArial.woff") format("woff"), url("../fonts/BPGArial.ttf") format("truetype");
+  font-family: 'Helvetica';
+  src: url("/fonts/Helvetica.woff2") format("woff2"), url("/fonts/Helvetica.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'BPG Nino Mtavruli';
-  src: url("../fonts/BPGNinoMtavruli-Bold.eot");
-  src: url("../fonts/BPGNinoMtavruli-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BPGNinoMtavruli-Bold.woff2") format("woff2"), url("../fonts/BPGNinoMtavruli-Bold.woff") format("woff"), url("../fonts/BPGNinoMtavruli-Bold.ttf") format("truetype");
+  font-family: 'Acumin Pro';
+  src: url("/fonts/AcuminPro-Regular.woff2") format("woff2"), url("/fonts/AcuminPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("/fonts/Helvetica-Bold.woff2") format("woff2"), url("/fonts/Helvetica-Bold.woff") format("woff");
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -166,6 +170,7 @@ body {
   position: fixed;
   z-index: 1;
   background: #F6F8F9;
+  font-family: helvetica;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
 }
@@ -487,7 +492,6 @@ body {
   }
 }
 
-/*********** news ***********/
 .news {
   padding-top: 50px;
 }

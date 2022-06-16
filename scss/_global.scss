@@ -1,8 +1,6 @@
-@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
-@import url("db.onlinewebfonts.com/c/796e2db2256ddfab47394211f41ac410?family=Acumin+Pro");
 body {
     position: relative;
-    font-family:Helvetica;
+    font-family: Helvetica;
     font-size: 16px;
 }
 
@@ -15,7 +13,6 @@ body {
     text-decoration: none;
     list-style: none;
 }
-
 // containers
 .container {
     width: 100%;
@@ -44,6 +41,7 @@ body {
     position: fixed;
     z-index: 1;
     background: $bgGrey;
+    font-family: helvetica;
     transition: all ease 0.4s;
     &__inner{
        display: flex;
