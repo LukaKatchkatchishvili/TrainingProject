@@ -36,6 +36,10 @@
         color: white;
         text-transform: uppercase;
         cursor: pointer;
+        transition: all ease 0.3s;
+        &:hover{
+            background-color: darken($color: $red, $amount: 10%);
+         }
      }
     }
     

@@ -26,7 +26,6 @@ body {
     margin: 0 auto;
 }
 
-
 .title{
     font-size:24px;
     font-family: helvetica;
@@ -43,6 +42,7 @@ body {
     position: fixed;
     z-index: 1;
     background: $bgGrey;
+    transition: all ease 0.4s;
     &__inner{
        display: flex;
        background: $bgGrey;
@@ -84,6 +84,11 @@ body {
           .active{
              opacity: 100%; 
           }
+       }
+    }
+    &__profile{
+       img{
+          cursor: pointer;
        }
     }
     .mini-menu{
@@ -148,7 +153,9 @@ body {
        filter: drop-shadow(0px 0px 60px $grey);
     }
  }
-
+ .header.scroll{
+    filter: drop-shadow(1px 1px 10px #A6ADB4);
+}
 
 
 // footer
@@ -165,11 +172,13 @@ body {
        display: flex;
     }
     &__logo{
-       color:white;
-       font-size:13px;
-       font-family: helvetica;
-       font-weight: bold;
-       text-transform: uppercase;
+       h1{
+         font-family: acumin;
+         color:white;
+         font-size:13px;
+         font-weight: bold;
+         text-transform: uppercase;
+       }
     }
     &__ul__wrapper{
        display: flex;
@@ -227,11 +236,18 @@ body {
     top:0;
     right:-20px;
 
-    cursor: pointer;
     img{
        margin:0 20px;
+       cursor: pointer;
     }
- }
+    @media (max-width:768px){
+         right: -10px;
+         img{
+             margin: 0 10px;
+         }
+     }
+}
+
 
 .time{
     display: flex;

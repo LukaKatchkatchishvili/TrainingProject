@@ -58,6 +58,10 @@
             color: white;
             text-transform: uppercase;
             cursor: pointer;
+            transition: all ease 0.3s;
+            &:hover{
+               background-color: darken($color: $red, $amount: 10%);
+            }
          }
       }
    }
@@ -125,6 +129,7 @@
          width: 360px;
          border-radius: 8px;
          background: white;
+         cursor: pointer;
          &--things{
             padding: 40px;
 
@@ -159,7 +164,7 @@
            &__item{
                margin-top: 40px;
                position: relative;
-               
+               cursor: pointer;
                &--img{
                   width: 760px;
                   img{
@@ -206,6 +211,7 @@
            }
            &__item{
                margin-top: 40px;
+               cursor: pointer;
                &--img{
                   width: 360px;
                   img{
@@ -216,6 +222,7 @@
                    h3{
                        margin-top: 12px;
                        margin-bottom: 10px;
+                       font-family: acumin;
                    }
                    .underline{
                       text-decoration: underline;

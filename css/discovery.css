@@ -125,6 +125,11 @@
   src: url("/fonts/Helvetica.ttf");
 }
 
+@font-face {
+  font-family: "acumin";
+  src: url("/fonts/acuminpro.ttf");
+}
+
 body {
   position: relative;
   font-family: Helvetica;
@@ -169,6 +174,8 @@ body {
   position: fixed;
   z-index: 1;
   background: #F6F8F9;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 
 .header__inner {
@@ -224,6 +231,10 @@ body {
 
 .header__nav__wrapper .active {
   opacity: 100%;
+}
+
+.header__profile img {
+  cursor: pointer;
 }
 
 .header .mini-menu {
@@ -307,6 +318,11 @@ body {
           filter: drop-shadow(0px 0px 60px #A6ADB4);
 }
 
+.header.scroll {
+  -webkit-filter: drop-shadow(1px 1px 10px #A6ADB4);
+          filter: drop-shadow(1px 1px 10px #A6ADB4);
+}
+
 .footer {
   background: #A6ADB4;
 }
@@ -328,10 +344,10 @@ body {
   display: flex;
 }
 
-.footer__logo {
+.footer__logo h1 {
+  font-family: acumin;
   color: white;
   font-size: 13px;
-  font-family: helvetica;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -402,11 +418,20 @@ body {
   position: absolute;
   top: 0;
   right: -20px;
-  cursor: pointer;
 }
 
 .arrow-wrapper img {
   margin: 0 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .arrow-wrapper {
+    right: -10px;
+  }
+  .arrow-wrapper img {
+    margin: 0 10px;
+  }
 }
 
 .time {
@@ -514,5 +539,11 @@ body {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.latest-news .btn-div button:hover {
+  background-color: #f83856;
 }
 /*# sourceMappingURL=discovery.css.map */

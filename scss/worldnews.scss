@@ -29,6 +29,7 @@
             margin-left: 30px;
             margin-right: 20px;
             font-weight: bold;
+            cursor: pointer;
             
         }
         span:nth-child(3){
@@ -37,6 +38,7 @@
         }
         span:nth-child(4){
             color:$grey;
+            cursor: pointer;
         }
     }
     &__left{
@@ -94,6 +96,7 @@
                 label{
                     font-size:13px;
                     margin-bottom: 10px;
+                    font-family: acumin;
                 }
                 input{
                     width: 100%;
@@ -113,6 +116,10 @@
                 border-radius: 5px;
                 color:white;
                 cursor: pointer;
+                transition: all ease 0.3s;
+                &:hover{
+                    background-color: darken($color: $red, $amount: 10%);
+                 }
             }
         }
     }
@@ -174,6 +181,9 @@
     }
     &__pages{
         display: none;
+        img{
+            cursor: pointer;
+        }
     }
     
 }
