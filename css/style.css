@@ -111,14 +111,6 @@
 }
 
 @font-face {
-  font-family: 'Acumin Pro';
-  src: url("/fonts/AcuminPro-Regular.woff2") format("woff2"), url("/fonts/AcuminPro-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Helvetica';
   src: url("/fonts/Helvetica-Bold.woff2") format("woff2"), url("/fonts/Helvetica-Bold.woff") format("woff");
   font-weight: bold;
@@ -745,7 +737,6 @@ body {
 .happening__img__wrapper__small__item__card h3 {
   margin-top: 12px;
   margin-bottom: 10px;
-  font-family: Acumin Pro;
 }
 
 .happening__img__wrapper__small__item__card .underline {
