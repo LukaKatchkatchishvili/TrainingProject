@@ -293,7 +293,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 10vh;
+  height: 15vh;
   background-color: black;
   opacity: 25%;
   margin-left: 0;
