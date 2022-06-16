@@ -183,6 +183,9 @@
         display: none;
         img{
             cursor: pointer;
+            @media (max-width:768px){
+                cursor: none;
+             }
         }
     }
     

@@ -128,6 +128,9 @@
          border-radius: 8px;
          background: white;
          cursor: pointer;
+         @media (max-width:768px){
+            cursor: none;
+         }
          &--things{
             padding: 40px;
 
@@ -163,6 +166,9 @@
                margin-top: 40px;
                position: relative;
                cursor: pointer;
+               @media (max-width:768px){
+                  cursor: none;
+               }
                &--img{
                   width: 760px;
                   img{
@@ -210,6 +216,9 @@
            &__item{
                margin-top: 40px;
                cursor: pointer;
+               @media (max-width:768px){
+                  cursor: none;
+               }
                &--img{
                   width: 360px;
                   img{

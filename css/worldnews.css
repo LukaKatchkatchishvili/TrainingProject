@@ -699,6 +699,12 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .big-article__pages img {
+    cursor: none;
+  }
+}
+
 @media (max-width: 1175px) {
   .worldNews__inner {
     margin: 0 80px;

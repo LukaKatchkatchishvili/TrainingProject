@@ -611,6 +611,12 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .trending__wrapper__card {
+    cursor: none;
+  }
+}
+
 .trending__wrapper__card--things {
   padding: 40px;
 }
@@ -655,6 +661,12 @@ body {
   margin-top: 40px;
   position: relative;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .happening__img__wrapper__big__item {
+    cursor: none;
+  }
 }
 
 .happening__img__wrapper__big__item--img {
@@ -708,6 +720,12 @@ body {
 .happening__img__wrapper__small__item {
   margin-top: 40px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .happening__img__wrapper__small__item {
+    cursor: none;
+  }
 }
 
 .happening__img__wrapper__small__item--img {
