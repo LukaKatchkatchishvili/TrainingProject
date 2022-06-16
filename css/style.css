@@ -1,4 +1,6 @@
 /* Slider */
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
+@import url("db.onlinewebfonts.com/c/796e2db2256ddfab47394211f41ac410?family=Acumin+Pro");
 .slick-slider {
   position: relative;
   display: block;
@@ -118,16 +120,6 @@
   font-weight: bold;
   font-style: italic;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "helvetica";
-  src: url("/fonts/Helvetica.ttf");
-}
-
-@font-face {
-  font-family: "acumin";
-  src: url("/fonts/acuminpro.ttf");
 }
 
 body {
@@ -749,7 +741,7 @@ body {
 .happening__img__wrapper__small__item__card h3 {
   margin-top: 12px;
   margin-bottom: 10px;
-  font-family: acumin;
+  font-family: Acumin Pro;
 }
 
 .happening__img__wrapper__small__item__card .underline {
